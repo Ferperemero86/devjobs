@@ -7,7 +7,7 @@ const withApollo = nextWithApollo(
     return new ApolloClient({
       ssrMode: typeof window === 'undefined',
       link: new HttpLink({
-        uri: 'https://rickandmortyapi.com/graphql',
+        uri: '/api/graphql',
       }),
       headers: {
         ...(headers as Record<string, string>),
